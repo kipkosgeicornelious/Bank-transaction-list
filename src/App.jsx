@@ -1,20 +1,16 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import About from './assets/About'
-import Login from './assets/Login'
-function App() {
-  const [count, setCount] = useState(0)
+import React from "react";
+import './App.css';
+import AccountInformation from "./Components/AccountInformation";
 
+function App() {
   return (
-    <>
-     
-     <h1>Bank of flatiron</h1>
-     <About/>
-     <Login/>
-    </>
-  )
+    <div className="container">
+      <div className="header">
+        <h2>Taptengele Bank of Flatiron</h2>
+      </div>
+      <AccountInformation />
+    </div>
+  );
 }
 
-export default App
+export default App;

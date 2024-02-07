@@ -1,42 +1,138 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+* {
+  box-sizing: border-box;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+input {
+  width: 25% !important;
+  margin-right: 0.25em!important;
+  margin-left: 0.25em!important;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App {
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+
+.App-header {
+  background-color: #222;
+  padding: 20px;
+  color: white;
 }
 
-.card {
-  padding: 2em;
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 200vh;
 }
 
-.read-the-docs {
-  color: #888;
+.container {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 10px #999;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.header {
+  background-color: blue;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px 10px 0 0;
+  text-align: center;
+}
+
+.header h2 {
+  margin: 0;
+}
+
+.form-container {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 10px #999;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.form {
+  text-align: center;
+}
+
+.input-field {
+  margin: 5px;
+}
+
+.button {
+  margin-top: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 10px;
+}
+
+.search-input {
+  flex: 1;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.search-icon {
+  cursor: pointer;
+  font-size: 24px;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+}
+.table-container {
+  margin: 20px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.table th, .table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  
+}
+.deleteBtn {
+  margin-top: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
 }
